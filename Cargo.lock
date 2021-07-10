@@ -121,6 +121,7 @@ checksum = "320cfe77175da3a483efed4bc0adc1968ca050b098ce4f2f1c13a56626128790"
 [[package]]
 name = "libtok2me"
 version = "0.1.0"
+source = "git+https://github.com/andyslucky/libtok2me#4588da27645faf3ffc59c61680a6815fadc002e7"
 dependencies = [
  "regex",
  "serde",
