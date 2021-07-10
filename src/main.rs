@@ -73,7 +73,7 @@ fn main() -> Result<(), Box<dyn IError>> {
         write_comment("This is the tokenized output from tok2me.");
         write_comment("Lines beginning with '#' are comments and may be skipped!");
     }
-    let mut tokenizer = Tokenizer::new(Box::new(conf), opts.get_input()?);
+    let mut tokenizer = Tokenizer::new(conf, opts.get_input()?);
     loop {
         let token = tokenizer.get_token()?;
         if let Some(tok) = token {

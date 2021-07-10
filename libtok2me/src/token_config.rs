@@ -5,7 +5,7 @@ use std::io::BufReader;
 use serde_yaml;
 
 /// Deserialized config file
-#[derive(Debug, Deserialize)]
+#[derive(Debug, Deserialize, Clone)]
 pub struct TokenizerConfig {
     pub ignore: Vec<RegexWrapper>,
     pub tokens: Vec<TokenDef>,

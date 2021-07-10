@@ -3,7 +3,7 @@ use serde::de::{Deserializer, Error as DeError, Visitor};
 use serde::Deserialize;
 use std::fmt;
 
-#[derive(Debug)]
+#[derive(Debug,Clone)]
 pub struct RegexWrapper(pub Regex);
 
 struct REVisitor;

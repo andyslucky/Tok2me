@@ -8,7 +8,7 @@ pub struct Token {
 }
 
 ///
-#[derive(Debug, Deserialize)]
+#[derive(Debug, Deserialize, Clone)]
 pub struct TokenDef {
     pub token_type: String,
     pub exprs: Vec<RegexWrapper>,

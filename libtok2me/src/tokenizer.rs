@@ -14,13 +14,13 @@ pub struct Tokenizer {
 
 impl Tokenizer {
     // add code here
-    pub fn new(config: Box<TokenizerConfig>, input_iter: Box<dyn Read>) -> Tokenizer {
+    pub fn new(config: TokenizerConfig, input_iter: Box<dyn Read>) -> Tokenizer {
         return Tokenizer {
             ln: 0,
             col: 0,
             buff: String::from(""),
             current_state: None,
-            config,
+            config : Box::new(config),
             input_iter,
         };
     }
