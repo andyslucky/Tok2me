@@ -8,3 +8,4 @@ edition = "2018"
 
 [dependencies]
 libtok2me = {path = "./libtok2me"}
+clap = "3.0.0-beta.2"
